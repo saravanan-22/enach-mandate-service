@@ -1,0 +1,41 @@
+{
+  "name": "enach-mandate-service",
+  "version": "1.0.0",
+  "description": "Enterprise NPCI eNACH & e-Mandate Automation Engine with 20-digit UMRN lifecycle, multi-mode auth, RBI pre-debit alerts, and presentation clearing batches",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "demo": "tsx examples/demo.ts",
+    "test": "tsx tests/mandate.test.ts && tsx tests/presentation.test.ts && tsx tests/compliance.test.ts"
+  },
+  "keywords": [
+    "fintech",
+    "enach",
+    "e-mandate",
+    "npci",
+    "umrn",
+    "recurring-payments",
+    "autopay",
+    "upi-autopay",
+    "rbi-compliance",
+    "lending"
+  ],
+  "author": "Saravanan",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

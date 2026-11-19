@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  enach-service:
+    build: .
+    container_name: enach-mandate-service
+    ports:
+      - "4100:4100"
+    environment:
+      - NODE_ENV=production
+      - PORT=4100
+      - API_PREFIX=/api/v1
+    restart: unless-stopped
